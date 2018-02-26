@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="kulanici.master.cs" Inherits="siteEmlak.kulanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="kullanici.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:darkgrey;">
+    <form id="form1" runat="server">
+         <div class="cerceve">
+              <div class="kafa" style="text-align:center; padding-top:55px; color:white; font-size:40px; 
+ font-family:'Microsoft Himalaya'; background-color:#006666;">
+
+                  <asp:Label ID="emlakAdi" runat="server" CssClass="emlakAdi" Text="KEREM EMLAK"></asp:Label>
+
+              </div>
+             <div class="talep" style="width: 996px"> 
+                 <div class="etalep" style="height: 94px">
+
+                         <a href="ilanekle.aspx">
+                 </div>
+
+             </div>
+             <div class="govde">
+
+                  <%--<div class="govdesol">
+
+                  </div>--%>
+                  <div class="govdesag">
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     <p>
+         &nbsp;</p>
+                      </asp:ContentPlaceHolder>
+                  </div>             
+
+            </div>
+             <div class="alt" style="padding-top:55px; color:white; font-size:40px; 
+ font-family:'Franklin Gothic'; background-color:#006666;">
+
+
+             </div>
+
+    </div>
+    </form>
+</body>
+</html>
